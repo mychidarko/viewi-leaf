@@ -1,0 +1,29 @@
+{
+    "name": "viewi/viewi",
+    "description": "Powerful tool for building progressive and completely reactive web applications",
+    "keywords": [
+        "viewi",
+        "UI",
+        "reactive",
+        "template"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Viewi\\": "src/Viewi/"
+        }
+    },
+    "bin": [
+        "bin/viewi"
+    ],
+    "authors": [
+        {
+            "name": "Ivan Voitovych",
+            "email": "col606v@gmail.com"
+        }
+    ]
+}

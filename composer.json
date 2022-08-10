@@ -1,0 +1,6 @@
+{
+    "require": {
+        "leafs/leaf": "^3.0",
+        "viewi/viewi": "^0.4.4"
+    }
+}

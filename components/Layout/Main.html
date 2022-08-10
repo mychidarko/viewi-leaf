@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>$title | Viewi</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <CssBundle link="https://cdn.muicss.com/mui-0.10.3/css/mui.min.css" />
+    <style>
+      /**
+        * Sidebar CSS
+        */
+
+      #sidebar {
+        background-color: #e57373;
+        padding: 15px;
+      }
+
+      #content {
+        padding: 26px;
+      }
+
+      @media (min-width: 768px) {
+        #sidebar {
+          position: fixed;
+          top: 0;
+          bottom: 0;
+          width: 180px;
+          height: 100%;
+          padding-top: 30px;
+        }
+
+        #content {
+          margin-left: 240px;
+          padding: 0 26px 0 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="sidebar">
+      <div class="menu-bar">
+        <div class="mui--text-white mui--text-display1 mui--align-vertical">
+          My App
+        </div>
+        <div class="">
+          <ul
+            class="mui-list--unstyled mui--text-menu"
+            style="padding: 10px 8px; line-height: 32px; font-size: 16px"
+          >
+            <li>
+              <a href="/" class="mui--text-light">Home</a>
+            </li>
+            <li>
+              <a href="/apps" class="mui--text-light">Apps</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="content">
+      <slot></slot>
+    </div>
+    <ViewiScripts />
+  </body>
+</html>
