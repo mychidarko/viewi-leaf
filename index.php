@@ -1,15 +1,16 @@
 <?php
 
+use Components\Views\Counter\Counter;
+
 require __DIR__ . '/vendor/autoload.php';
 
 viewi()->init();
 
-viewi()->get('/', Components\Views\Counter\Counter::class);
-viewi()->get('/counter', Components\Views\Counter\Counter::class);
+viewi()->get('/', Counter::class);
 
 viewi()->compile();
 
-app()->get('/home', function () {
+app()->get('/', function () {
 	response()->page('./welcome.html');
 });
 
