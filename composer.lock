@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8d170e40bbfa33313886254ab1c8b78e",
+    "content-hash": "bd077f69abc1de43ecb71842e2567a27",
     "packages": [
         {
             "name": "leafs/anchor",
@@ -203,16 +203,16 @@
         },
         {
             "name": "leafs/leaf",
-            "version": "v3.0.1",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/leafsphp/leaf.git",
-                "reference": "ce7ce8bd720b5f9634bc622899122ee693c7ec3b"
+                "reference": "7cc488dce1cc859eec728265940015bfcb994588"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/leafsphp/leaf/zipball/ce7ce8bd720b5f9634bc622899122ee693c7ec3b",
-                "reference": "ce7ce8bd720b5f9634bc622899122ee693c7ec3b",
+                "url": "https://api.github.com/repos/leafsphp/leaf/zipball/7cc488dce1cc859eec728265940015bfcb994588",
+                "reference": "7cc488dce1cc859eec728265940015bfcb994588",
                 "shasum": ""
             },
             "require": {
@@ -258,7 +258,7 @@
             ],
             "support": {
                 "issues": "https://github.com/leafsphp/leaf/issues",
-                "source": "https://github.com/leafsphp/leaf/tree/v3.0.1"
+                "source": "https://github.com/leafsphp/leaf/tree/v3.1.0"
             },
             "funding": [
                 {
@@ -270,20 +270,20 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2022-05-29T19:32:50+00:00"
+            "time": "2022-08-11T01:26:08+00:00"
         },
         {
             "name": "leafs/router",
-            "version": "v0.1.6",
+            "version": "v0.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/leafsphp/router.git",
-                "reference": "aef869ee450c3c6688c23c439667b62ca64304ef"
+                "reference": "c343c273f7b23f957a3bf8c587ecba8eeea57625"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/leafsphp/router/zipball/aef869ee450c3c6688c23c439667b62ca64304ef",
-                "reference": "aef869ee450c3c6688c23c439667b62ca64304ef",
+                "url": "https://api.github.com/repos/leafsphp/router/zipball/c343c273f7b23f957a3bf8c587ecba8eeea57625",
+                "reference": "c343c273f7b23f957a3bf8c587ecba8eeea57625",
                 "shasum": ""
             },
             "require": {
@@ -321,7 +321,7 @@
             ],
             "support": {
                 "issues": "https://github.com/leafsphp/router/issues",
-                "source": "https://github.com/leafsphp/router/tree/v0.1.6"
+                "source": "https://github.com/leafsphp/router/tree/v0.1.7"
             },
             "funding": [
                 {
@@ -333,7 +333,78 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2022-05-29T18:53:43+00:00"
+            "time": "2022-08-20T01:44:44+00:00"
+        },
+        {
+            "name": "leafs/viewi",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/leafsphp/viewi.git",
+                "reference": "ad23770c844c446db150ff15b574d55086a63340"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/leafsphp/viewi/zipball/ad23770c844c446db150ff15b574d55086a63340",
+                "reference": "ad23770c844c446db150ff15b574d55086a63340",
+                "shasum": ""
+            },
+            "require": {
+                "leafs/leaf": "*",
+                "viewi/viewi": "*"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "Leaf\\Viewi\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Darko",
+                    "email": "mickdd22@gmail.com",
+                    "homepage": "https://mychi.netlify.app",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Ivan Voitovych",
+                    "email": "voitovych.ivan.v@gmail.com",
+                    "homepage": "https://github.com/ivanvoitovych",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Viewi integration for Leaf PHP",
+            "homepage": "https://leafphp.dev/modules/",
+            "keywords": [
+                "framework",
+                "leaf",
+                "leafPHP",
+                "php",
+                "viewi"
+            ],
+            "support": {
+                "issues": "https://github.com/leafsphp/viewi/issues",
+                "source": "https://github.com/leafsphp/viewi/tree/main"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/leafsphp",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/leaf",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2022-08-20T17:15:13+00:00"
         },
         {
             "name": "psr/log",
@@ -445,7 +516,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "leafs/viewi": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
