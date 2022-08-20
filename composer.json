@@ -1,6 +1,11 @@
 {
-    "require": {
-        "leafs/leaf": "^3.0",
-        "leafs/viewi": "dev-main"
+  "require": {
+    "leafs/leaf": "^3.0",
+    "leafs/viewi": "dev-main"
+  },
+  "autoload": {
+    "psr-4": {
+      "Components\\": "viewi-app/Components/"
     }
+  }
 }
